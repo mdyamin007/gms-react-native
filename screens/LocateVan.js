@@ -13,7 +13,7 @@ const LocateVan = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    ((async) => {
+    (async () => {
       setLoading(true);
       const unsubscribe = onAuthStateChanged(auth, async (user) => {
         if (user) {
@@ -21,7 +21,7 @@ const LocateVan = () => {
             if (snapshot.exists()) {
               const userData = snapshot.val();
               setUserLocation(userData.location);
-              // console.log(userLocation);
+              console.log(userLocation);
             } else {
               console.log("Error occurred!");
             }

@@ -59,9 +59,11 @@ const LoginScreen = () => {
         // console.log(user);
         set(ref(database, "users/" + user.uid), {
           location,
+          uid: user.uid,
           email,
           fullName,
           userType,
+          garbageCollected: false,
         });
         if (userType === "user") {
           userListRef = ref(database, "houseOwners");
@@ -71,6 +73,7 @@ const LoginScreen = () => {
             location,
             fullName,
             email,
+            garbageCollected: false,
           });
         } else {
           collectorListRef = ref(database, "collectors");

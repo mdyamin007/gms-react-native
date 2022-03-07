@@ -13,6 +13,8 @@ import AuthProvider from "./contexts/AuthProvider";
 import LocateVan from "./screens/LocateVan";
 import DashboardScreen from "./screens/DashboardScreen";
 import LocateGarbage from "./screens/LocateGarbage";
+import CashCollectionScreen from "./screens/CashCollectionScreen";
+import GarbageCollectionCheckingScreen from "./screens/GarbageCollectionCheckingScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -74,6 +76,16 @@ export default function App() {
           options={{ headerShown: false }}
           name="LocateGarbage"
           component={LocateGarbage}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="CashCollection"
+          component={CashCollectionScreen}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="GarbageCollectionChecking"
+          component={GarbageCollectionCheckingScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

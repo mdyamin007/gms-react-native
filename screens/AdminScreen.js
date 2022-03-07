@@ -42,7 +42,7 @@ const HomeScreen = () => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("MyGarbageChecker")}
+            onPress={() => navigation.navigate("GarbageCollectionChecking")}
             style={tw`flex justify-center items-center mx-4 my-4 p-4 bg-yellow-500 h-32 w-32 rounded-2xl`}
           >
             <Text style={tw`text-xl text-white font-bold text-center`}>
@@ -50,7 +50,7 @@ const HomeScreen = () => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Payment")}
+            onPress={() => navigation.navigate("CashCollection")}
             style={tw`flex justify-center items-center mx-4 my-4 p-4 bg-yellow-500 h-32 w-32 rounded-2xl`}
           >
             <Text style={tw`text-xl text-white font-bold text-center`}>
